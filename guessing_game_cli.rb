@@ -3,6 +3,7 @@ def run_guessing_game
   num = rand(1..6)
   print "Guess a number between 1 and 6: "
   guess = gets.chomp
+  binding.pry
   if guess == num
     puts "You guessed the correct number!"
   end
