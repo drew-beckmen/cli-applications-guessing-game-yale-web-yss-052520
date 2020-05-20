@@ -1,18 +1,16 @@
 require 'pry'
 # Code your solution here!
 def run_guessing_game
-  num = rand(1..6)
+  num = rand(1..6).to_s
   print "Guess a number between 1 and 6: "
-  guess = gets.chomp.to_i
+  guess = gets.chomp
   binding.pry
   if guess == num
     puts "You guessed the correct number!"
-  end
-  if guess != num
-    puts "Sorry! The computer guessed #{num}."
-  end
-  if guess == "exit"
+  elsif guess == "exit"
     puts "Goodbye!"
+  else
+    puts "Sorry! The computer guessed #{num}."
   end
 end
 
