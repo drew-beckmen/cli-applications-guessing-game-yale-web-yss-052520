@@ -1,7 +1,7 @@
 require 'pry'
 # Code your solution here!
 def run_guessing_game
-  num = rand(5) + 1
+  num = rand(6) + 1
   print "Guess a number between 1 and 6: "
   guess = gets.chomp
   if guess.to_i == num
